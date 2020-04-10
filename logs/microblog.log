@@ -1,7 +1,43 @@
-2020-04-07 23:58:51,345 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:50]
-2020-04-09 11:20:30,785 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:50]
-2020-04-09 12:06:10,877 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:50]
-2020-04-09 16:58:31,531 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:52]
-2020-04-09 17:02:35,308 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:52]
-2020-04-09 17:03:39,573 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:52]
-2020-04-09 17:07:23,881 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:52]
+2020-04-09 17:28:47,711 ERROR: Exception on /index [GET] [in c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\routes.py", line 27, in index
+    page = request.args.get('page', 1, type=int)
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
+2020-04-09 17:28:49,929 ERROR: Exception on /index [GET] [in c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\routes.py", line 27, in index
+    page = request.args.get('page', 1, type=int)
+  File "c:\users\karina\desktop\python~1\flaskm~1\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
+2020-04-09 17:37:46,003 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:54]
+2020-04-09 17:39:00,766 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:54]
+2020-04-09 17:53:59,817 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:54]
+2020-04-09 17:59:55,382 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:54]
+2020-04-09 18:01:33,799 INFO: Microblog startup [in C:\Users\Karina\Desktop\PythonDocs\flask microblog\app\__init__.py:54]
